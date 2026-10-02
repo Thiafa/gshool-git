@@ -1,53 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resolução de Conflitos - Git</title>
-    <style>
-        main {
-            margin: 0 auto;
-        }
-        h1 {
-            text-align: center;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <title>Greenn School - Escola de Programação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#inicio" class="logo">
+                <span class="logo__greenn">greenn</span><span class="logo__school">school</span>
+            </a>
+
+            <nav class="nav" id="menu">
+                <ul class="nav__list">
+                    <li><a href="#inicio" class="nav__link">Início</a></li>
+                    <li><a href="#o-que-e" class="nav__link">O que é</a></li>
+                    <li><a href="#aulas" class="nav__link">Aulas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <main>
-        <h1>Atividade de resolução de conflitos - Git</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Cidade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Thiago</td>
-                    <td>Montes Claros</td>
-                </tr>
-                <tr>
-                    <td>[Altere o seu nome]</td>
-                    <td>[Altere para sua cidade]</td>
-                </tr>
-            </tbody>
-        </table>
+
+        <section class="hero" id="inicio">
+            <div class="container hero__container">
+                <p class="hero__tag">&lt; bem-vindo à Greenn School /&gt;</p>
+                <h1 class="hero__title">
+                    Aprenda a programar <span class="highlight">na prática</span>
+                </h1>
+                <p class="hero__subtitle">
+                    Aulas diretas, projetos reais e instrutores que já viveram o mercado.
+                    Sem enrolação, só código que funciona.
+                </p>
+                <a href="#aulas" class="btn btn--primary">Ver aulas</a>
+            </div>
+        </section>
+
+        <section class="sobre" id="o-que-e">
+            <div class="container">
+                <h2 class="section__title">O que é a Greenn School?</h2>
+                <p class="sobre__texto">
+                    A Greenn School é uma escola de programação feita para quem quer aprender
+                    fazendo. Nossas aulas unem teoria curta e prática longa, com projetos que
+                    simulam o dia a dia real de quem trabalha com código.
+                </p>
+
+                <div class="destaques">
+                    <article class="destaque">
+                        <span class="destaque__icone" aria-hidden="true">&lt;/&gt;</span>
+                        <h3 class="destaque__titulo">Aulas práticas</h3>
+                        <p class="destaque__texto">
+                            Cada módulo termina com um projeto real para colocar a mão no código.
+                        </p>
+                    </article>
+
+                    <article class="destaque">
+                        <span class="destaque__icone" aria-hidden="true">★</span>
+                        <h3 class="destaque__titulo">Instrutores</h3>
+                        <p class="destaque__texto">
+                            Profissionais que atuam no mercado e ensinam o que realmente se usa.
+                        </p>
+                    </article>
+
+                    <article class="destaque">
+                        <span class="destaque__icone" aria-hidden="true">▣</span>
+                        <h3 class="destaque__titulo">Projetos</h3>
+                        <p class="destaque__texto">
+                            Você sai de cada turma com um portfólio real para mostrar.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="aulas" id="aulas">
+            <div class="container">
+                <h2 class="section__title">Aulas</h2>
+
+                <div class="aulas__grid" id="lista-aulas">
+
+                    <article class="card-aula">
+                        <span class="card-aula__numero">01</span>
+                        <h3 class="card-aula__titulo">Introdução ao JavaScript</h3>
+                        <p class="card-aula__resumo">
+                            Sintaxe, variáveis, operadores e os primeiros scripts rodando no navegador.
+                        </p>
+                        <div class="card-aula__rodape">
+                            <span class="card-aula__duracao">45 min</span>
+                            <span class="card-aula__tag">Fundamentos</span>
+                        </div>
+                    </article>
+
+                    <article class="card-aula">
+                        <span class="card-aula__numero">02</span>
+                        <h3 class="card-aula__titulo">Tipos de dados e estruturas</h3>
+                        <p class="card-aula__resumo">
+                            Arrays, objetos, loops e condicionais para organizar e percorrer dados.
+                        </p>
+                        <div class="card-aula__rodape">
+                            <span class="card-aula__duracao">50 min</span>
+                            <span class="card-aula__tag">Fundamentos</span>
+                        </div>
+                    </article>
+
+                    <article class="card-aula">
+                        <span class="card-aula__numero">03</span>
+                        <h3 class="card-aula__titulo">DOM: manipulando a página</h3>
+                        <p class="card-aula__resumo">
+                            Selecionar elementos, alterar conteúdo e reagir a eventos do usuário.
+                        </p>
+                        <div class="card-aula__rodape">
+                            <span class="card-aula__duracao">60 min</span>
+                            <span class="card-aula__tag">DOM</span>
+                        </div>
+                    </article>
+
+                    <article class="card-aula">
+                        <span class="card-aula__numero">04</span>
+                        <h3 class="card-aula__titulo">Eventos e interatividade</h3>
+                        <p class="card-aula__resumo">
+                            Cliques, formulários e teclado: como construir páginas que respondem ao usuário.
+                        </p>
+                        <div class="card-aula__rodape">
+                            <span class="card-aula__duracao">55 min</span>
+                            <span class="card-aula__tag">DOM</span>
+                        </div>
+                    </article>
+
+                    <article class="card-aula">
+                        <span class="card-aula__numero">05</span>
+                        <h3 class="card-aula__titulo">Funções e escopo</h3>
+                        <p class="card-aula__resumo">
+                            Organizando o código em blocos reutilizáveis e entendendo o escopo de variáveis.
+                        </p>
+                        <div class="card-aula__rodape">
+                            <span class="card-aula__duracao">50 min</span>
+                            <span class="card-aula__tag">Fundamentos</span>
+                        </div>
+                    </article>
+
+                    <article class="card-aula">
+                        <span class="card-aula__numero">06</span>
+                        <h3 class="card-aula__titulo">Projeto prático</h3>
+                        <p class="card-aula__resumo">
+                            Construindo uma mini aplicação do zero, unindo tudo que foi aprendido.
+                        </p>
+                        <div class="card-aula__rodape">
+                            <span class="card-aula__duracao">90 min</span>
+                            <span class="card-aula__tag">Projeto</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Greenn School. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
